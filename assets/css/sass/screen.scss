@@ -1,0 +1,201 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "mixins.scss";
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: $background-color;
+    color: $text-color;
+    font-size: $font-size;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3{
+    font-family: $heading-fonts;
+}
+
+a{
+    text-decoration: none;
+    color: $text-color;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+section#container{
+    @include inline-float-left;
+    margin: 3%;
+    min-width: 1020px;
+    width: 94%;
+    height: 94%;
+}
+
+section#side{
+    @include inline-float-left;
+    width: 230px;
+}
+
+/*
+    Header
+*/
+header{ 
+    @include inline-float-left;
+    width: 100%;
+    min-height: 150px;
+    clear: both;
+
+    h1{
+        @include inline-float-left;
+        clear: both;
+        font-size: 26px;
+        a:hover{
+            text-decoration: none;
+        }
+    }
+    h2{
+        @include inline-float-left;
+        clear: both;
+        font-size: 13px;
+    }
+}
+
+/*
+    Nav
+*/
+nav{
+    @include inline-float-left;
+    width: 180px;
+    clear: both;
+    font-size: 12px;
+    ol{
+        @include inline-float-left;
+        width: 100%;
+        clear: both;
+        li{
+            @include inline-float-left;
+            width: 100%;
+            a{
+                @include inline-float-left;
+                line-height: 25px;
+                height: 25px;
+            }
+            ol{
+                display: inline;
+                float: left;
+                width: 95%;
+                padding: 0px 0px 0px 5%;
+                font-size: 90%;
+                li{
+                    @include inline-float-left;
+                    width: 100%;
+                    a{
+                        @include inline-float-left;
+                        width: 100%;
+                        border-bottom: 1px solid #363636;
+                        &:hover{
+                            color: #959595;
+                            background-color: #262324;
+                            text-decoration: none;
+                        }
+                    }
+                }
+                li:last-child a{
+                    border-bottom: none;
+                }
+            }
+        }
+        li.subnav-shown ol{
+            display: inline;
+        }
+    }
+}
+
+/*
+    Content 
+*/
+
+.content{
+    @include inline-float-left;
+    width: 790px;
+}
+
+/*
+    Photos
+*/
+
+#album, #contact{
+    @include inline-float-left;
+    min-height: 50px;
+    h3{
+        @include inline-float-left;
+        margin: 0px 0px 15px 0px;
+        font-size: 13px;
+        line-height: 14px;
+        clear: both;
+    }
+    p{
+        @include inline-float-left;
+        width: 500px;
+        clear: both;
+    }
+    ul{
+        @include inline-float-left;
+        width: 500px;
+        margin: 20px 0px 0px 0px; 
+        clear: both;
+        li{
+            @include inline-float-left;
+            line-height: 20px;
+            height: 20px;
+            clear: both;
+        }
+    }
+}
+
+.photos{
+    @include inline-float-left;
+    width: 790px;
+    margin: 5px 0px 0px 0px;
+    article{
+        @include inline-float-left;
+        width: 500px;
+        min-height: 75px;
+        clear: both;
+    }
+    ol{
+        @include inline-float-left;
+        margin: 0px 0px 0px 10px;
+        width: 100px;
+        li{
+            @include inline-float-left;
+            a{
+                @include inline-float-left;
+                text-decoration: none;
+                margin: 0px 5px 0px 0px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            &:nth-child(2) a:before{
+                content: "|";
+            }
+        }
+    }
+    img{
+        @include inline-float-left;
+        clear: both;
+    }
+}

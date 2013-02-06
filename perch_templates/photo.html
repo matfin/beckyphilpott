@@ -1,0 +1,10 @@
+<section class="photo">
+    <h4>
+        <perch:content id="photo_title" type="text" label="Photo Title" required="false" title="true" />
+    </h4>
+    <h5>
+        <perch:content id="photo_client" type="text" label="Client" required="false" title="true" />
+    </h5>
+    <perch:content id="content" type="textarea" label="Photo Description" textile="true" editor="markitup" required="false" />
+    <img src="<perch:content id="photo" type="image" label="Photo" />" alt="<perch:content id="photo_title" type="text" label="Photo Title" required="true" title="true" />" />
+</section>

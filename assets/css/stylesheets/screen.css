@@ -1,0 +1,318 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 14, ../sass/screen.scss */
+body {
+  background-color: #181818;
+  color: white;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 21, ../sass/screen.scss */
+h1, h2, h3 {
+  font-family: "Raleway", Arial, serif;
+}
+
+/* line 25, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 30, ../sass/screen.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 34, ../sass/screen.scss */
+p {
+  line-height: 1.5em;
+}
+
+/* line 38, ../sass/screen.scss */
+section#container {
+  display: inline;
+  float: left;
+  margin: 3%;
+  min-width: 1020px;
+  width: 94%;
+  height: 94%;
+}
+
+/* line 46, ../sass/screen.scss */
+section#side {
+  display: inline;
+  float: left;
+  width: 230px;
+}
+
+/*
+    Header
+*/
+/* line 54, ../sass/screen.scss */
+header {
+  display: inline;
+  float: left;
+  width: 100%;
+  min-height: 150px;
+  clear: both;
+}
+/* line 60, ../sass/screen.scss */
+header h1 {
+  display: inline;
+  float: left;
+  clear: both;
+  font-size: 26px;
+}
+/* line 64, ../sass/screen.scss */
+header h1 a:hover {
+  text-decoration: none;
+}
+/* line 68, ../sass/screen.scss */
+header h2 {
+  display: inline;
+  float: left;
+  clear: both;
+  font-size: 13px;
+}
+
+/*
+    Nav
+*/
+/* line 78, ../sass/screen.scss */
+nav {
+  display: inline;
+  float: left;
+  width: 180px;
+  clear: both;
+  font-size: 12px;
+}
+/* line 83, ../sass/screen.scss */
+nav ol {
+  display: inline;
+  float: left;
+  width: 100%;
+  clear: both;
+}
+/* line 87, ../sass/screen.scss */
+nav ol li {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+/* line 90, ../sass/screen.scss */
+nav ol li a {
+  display: inline;
+  float: left;
+  line-height: 25px;
+  height: 25px;
+}
+/* line 95, ../sass/screen.scss */
+nav ol li ol {
+  display: inline;
+  float: left;
+  width: 95%;
+  padding: 0px 0px 0px 5%;
+  font-size: 90%;
+}
+/* line 101, ../sass/screen.scss */
+nav ol li ol li {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+/* line 104, ../sass/screen.scss */
+nav ol li ol li a {
+  display: inline;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #363636;
+}
+/* line 108, ../sass/screen.scss */
+nav ol li ol li a:hover {
+  color: #959595;
+  background-color: #262324;
+  text-decoration: none;
+}
+/* line 115, ../sass/screen.scss */
+nav ol li ol li:last-child a {
+  border-bottom: none;
+}
+/* line 120, ../sass/screen.scss */
+nav ol li.subnav-shown ol {
+  display: inline;
+}
+
+/*
+    Content 
+*/
+/* line 130, ../sass/screen.scss */
+.content {
+  display: inline;
+  float: left;
+  width: 790px;
+}
+
+/*
+    Photos
+*/
+/* line 139, ../sass/screen.scss */
+#album, #contact {
+  display: inline;
+  float: left;
+  min-height: 50px;
+}
+/* line 142, ../sass/screen.scss */
+#album h3, #contact h3 {
+  display: inline;
+  float: left;
+  margin: 0px 0px 15px 0px;
+  font-size: 13px;
+  line-height: 14px;
+  clear: both;
+}
+/* line 149, ../sass/screen.scss */
+#album p, #contact p {
+  display: inline;
+  float: left;
+  width: 500px;
+  clear: both;
+}
+/* line 154, ../sass/screen.scss */
+#album ul, #contact ul {
+  display: inline;
+  float: left;
+  width: 500px;
+  margin: 20px 0px 0px 0px;
+  clear: both;
+}
+/* line 159, ../sass/screen.scss */
+#album ul li, #contact ul li {
+  display: inline;
+  float: left;
+  line-height: 20px;
+  height: 20px;
+  clear: both;
+}
+
+/* line 168, ../sass/screen.scss */
+.photos {
+  display: inline;
+  float: left;
+  width: 790px;
+  margin: 5px 0px 0px 0px;
+}
+/* line 172, ../sass/screen.scss */
+.photos article {
+  display: inline;
+  float: left;
+  width: 500px;
+  min-height: 75px;
+  clear: both;
+}
+/* line 178, ../sass/screen.scss */
+.photos ol {
+  display: inline;
+  float: left;
+  margin: 0px 0px 0px 10px;
+  width: 100px;
+}
+/* line 182, ../sass/screen.scss */
+.photos ol li {
+  display: inline;
+  float: left;
+}
+/* line 184, ../sass/screen.scss */
+.photos ol li a {
+  display: inline;
+  float: left;
+  text-decoration: none;
+  margin: 0px 5px 0px 0px;
+}
+/* line 188, ../sass/screen.scss */
+.photos ol li a:hover {
+  text-decoration: underline;
+}
+/* line 192, ../sass/screen.scss */
+.photos ol li:nth-child(2) a:before {
+  content: "|";
+}
+/* line 197, ../sass/screen.scss */
+.photos img {
+  display: inline;
+  float: left;
+  clear: both;
+}

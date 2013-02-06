@@ -1,0 +1,9 @@
+$background-color: #181818;
+$text-color: #fff;
+$font-size: 12px;
+$heading-fonts: 'Raleway', Arial, serif;
+
+@mixin inline-float-left{
+    display: inline;
+    float: left;
+}
