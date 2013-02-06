@@ -1,11 +1,5 @@
 <nav>
     <ol>
-        <li>
-            <a href="<?=base_href;?>album/fashion.html" title="Fashion">
-                Fashion
-            </a>
-            <?php perch_content('fashion_nav');?>
-        </li>
         <li <?=(strcmp(page, 'album') == 0) && (strcmp($mainalbum , 'places-ive-been') == 0) ? 'class="subnav-shown"':'' ?>>
             <a class="expandable-sub" href="#" title="Places I&#39;ve been">
                 Places I&#39;ve been
@@ -19,10 +13,22 @@
             <?php perch_content('people_ive_seen_nav');?>
         </li>
         <li>
+            <a href="<?=base_href;?>album/fashion.html" title="Fashion">
+                Fashion
+            </a>
+            <?php perch_content('fashion_nav');?>
+        </li>
+        <li>
             <a href="<?=base_href;?>album/landscapes.html" title="Landscapes">
                 Landscapes
             </a>
             <?php perch_content('landscapes_nav');?>
+        </li>
+        <li>
+            <a href="<?=base_href;?>album/carmel.html" title="Carmel">
+                Carmel
+            </a>
+            <?php perch_content('carmel_nav');?>
         </li>
         <li>
             <a href="<?=base_href;?>contact.html" title="Contact">
